@@ -1,10 +1,7 @@
-<form action="/new" method="POST">
+<form action="/", method='POST'>
   <input type="text" name="name"></input>
   <input type="text" name="description"></input>
-  <input type="submit"></input>
+  <button type="submit" value="Display" formaction="/display">Display</button>
+  <button type="submit" formaction="/new">Submit</button>
 </form>
 
-{% for item in items %}
-  <h1> {{ item.name }} </h1>
-  <p> {{ item.description }} <p>
-{% endfor %}
